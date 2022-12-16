@@ -10,7 +10,7 @@ console.log(loginobj.email);
   console.log(login_data);
    let count=0
    for(let i=0; i<login_data.length; i++){
-    if(login_data[i].email==logobj.email && login_data[i].password==logobj.password ){
+    if(login_data[i].email==loginobj.email && login_data[i].password==loginobj.password ){
       count++ ;
     }
     }

@@ -56,16 +56,91 @@ img{
 
 /* dropdown menu created on top */
 .dropdown1{
-    display: block;
-    position: absolute;
+    position: relative;
+    display: inline-block;
 }
-.dropdown1 ul{
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+    color: black;
+    min-width: 150px;
+    padding: 6px 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1;
+}
+.dropdown1:hover .dropdown-menu{
     display: block;
+}
+
+
+/* css for mid images part */
+.mid-images{
+    margin-top: -150px;
+    padding-top: 0;
+    display: flex;
+}
+.mid-images>img{
+    width: 100%;
+}
+
+
+/* css for card 1 images */
+#cards1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    
+}
+img{
+    width: 100%;
+    height: 50%;
+}
+
+
+/* css for cards 2 images */
+#cards2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+/* css for cards 3 */
+#cards3{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+/* css for cards 4 images */
+#cards4{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
     margin: 10px;
 }
 
-.dropdown1 ul li{
-    width: 150px;
+/* css for spotlight images */
+#spotlight{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+#spotlight>img{
+    padding: 15px;
 }
 
 
+
+/* css for footer part */
+#footer{
+    display: flex;
+}
+
+#about>ul>li,#products>ul>li,#travel-links>ul>li, #partners>ul>li{
+    margin: 10px;
+}
+
+#social-media{
+    margin: auto;
+}
