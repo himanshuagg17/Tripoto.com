@@ -1,22 +1,22 @@
-document.querySelector("#form").addEventListener("submit",login)
-function login(event){
- event.preventDefault()
- loginobj={
-  email:document.getElementById("mail").value,
-  password:document.getElementById("password").value
-}
-console.log(loginobj.email);
- let login_data=JSON.parse(localStorage.getItem("login"))||[];
-  console.log(login_data);
-   let count=0
-   for(let i=0; i<login_data.length; i++){
-    if(login_data[i].email==loginobj.email && login_data[i].password==loginobj.password ){
-      count++ ;
+let loginbtn=document.querySelector("#loginform");
+loginbtn.addEventListener("submit",function(event){
+    event.preventDefault();
+    let email=loginbtn.email.value;
+    let password=loginbtn.password.value;
+
+    let storedEmail=localStorage.getItem("email");
+    let storedPassword=localStorage.getItem("password");
+
+    if(email!==storedEmail){
+        alert("enter correct email");
     }
+    else{
+        if(password!==storedPassword){
+            alert("enter correct password");
+        }
+        else{
+            alert("login successful");
+            window.location.assign("./index.html");
+        }
     }
-    if(count>0){
-        window.location.href="index2.html";
-    }else{
-        alert("Please enter correct email or password")
-    }
-   }
+})
