@@ -1,9 +1,16 @@
-let login_data=JSON.parse(localStorage.getItem("login"))||[];
-
-let signup=document.querySelector("#signup");
-signup.addEventListener("click",function(){
-    let count=0;
-    login_data.forEach(function(el){
-        
-    })
+let signupbtn=document.querySelector("#signupform");
+signupbtn.addEventListener("submit",function(event){
+    console.log("fahfkjlahfkjhakjlfhkjahkfhkhf");
+    event.preventDefault();
+    let name=signupbtn.name.value;
+    let age=signupbtn.age.value;
+    let email=signupbtn.email.value;
+    let password=signupbtn.password.value;
+     
+    localStorage.setItem("name",name);
+    localStorage.setItem("age",age);
+    localStorage.setItem("email",email);
+    localStorage.setItem("password",password);
+    alert("signup successful!");
+    signupbtn.reset();
 })
