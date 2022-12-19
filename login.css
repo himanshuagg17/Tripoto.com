@@ -10,3 +10,28 @@ body{
     padding: 6px 12px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
+form{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 400px;
+    margin: auto;
+    margin-top: 200px;
+    padding: 0 40px;
+}
+body{
+    background: linear-gradient(120deg,#2980b9,#8e44ad);
+    overflow: hidden;
+
+}
+ 
+h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid  silver;
+}
+input[type="submit"]{
+   
+    height: 30px;
+    background: #2691d9;
+    
+}
