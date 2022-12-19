@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 400px;
+    margin: auto;
+    margin-top: 200px;
+    padding: 0 40px;
+}
+body{
+    background: linear-gradient(120deg,#71b9ea,#bc51eb);
+    overflow: hidden;
+
+}
+ /* #signupform{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+
+  } */
+h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid  silver;
+}
+input[type="submit"]{
+   
+    height: 30px;
+    background: #2691d9;
+    
+}
+    </style>
+</head>
+<body>
+    <form action="" id="carddetails">
+        <input type="text" name="" id="name" placeholder="name" id="name">
+        <input type="number" name="" id="card" placeholder="card number" id="cardnumber">
+        <input type="number" name="" id="cvv" placeholder="cvv" id="cvv">
+        <input type="submit" value="confirm payment">
+    </form>
+</body>
+</html>
+<script>
+    let details=document.querySelector("#carddetails");
+    details.addEventListener("submit",function(event){
+         event.preventDefault();
+         if(details.name.value=="himanshu" && details.card.value=="9999888877776666" && details.cvv.value=="123"){
+              alert("payment successful");
+              alert("have a great trip");
+              window.location.assign("./index.html");
+         }
+         else{
+            alert("enter correct card details");
+         }
+    })
+</script>

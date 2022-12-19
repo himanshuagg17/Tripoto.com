@@ -4,16 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Document
     DreamTrips.com: Share and Discover Travel Stories, Community, Tourism Guides, Hotels &amp; Holidays
     </title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="util.css">
+
+    
+
+     <!-- Link Swiper's CSS -->
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+     />
+
+     <!-- Demo styles -->
+    <style>
+        html,
+        body ,section, #destination-plans{
+          position: relative;
+          height: 90%;
+        }
+  
+        body ,section, #destination-plans{
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          
+          
+        }
+
+        .swiper {
+        width: 100%;
+        height: auto;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .swiper {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+      }
+      .box>img{
+        height: 210px;
+      }
+    </style>
+  
+
+     
+   
+       
+    
+    
+
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="left navbar">
+            <div class="left-navbar">
                 <img src="https://www.tripoto.com/img/logo/tripoto-logo.jpg" alt="">
             </div>
             <div class="right navbar">
@@ -77,6 +153,77 @@
         <img src="https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192344_dd.png" alt="">
     </div>
    
+    <!-- the first carouosel after the mid images section -->
+
+      <!-- Swiper -->
+      <section>
+        <h1>In the spotlight: partnerships</h1>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="box">
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1671021501_activity_scuba_diving_in_oman_1.jpg" alt="">
+                <h6 class="text">OMAN TOURISM</h6>
+                <p class="text">Just 3 Hours away,Oman is the trending International destination every indian must visit</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1670839402_2020_rws_acw_kv3_sharktank_4355_lr.jpg" alt="">
+                <h6>Resorts world sentosa</h6>
+                <p>These thrilling experiences in resorts werld sentosa will have you booking a trip to singapore</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1653562686_275721311_336154091889496_2451172917242741439_n.jpg" alt="">
+                <h6>singapore tourism</h6>
+                <p>visit these 7 chic bars in singapore if you're in the mood to live up the night!</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1670586190_image_20221209_165038_253_1.jpg" alt="">
+                <h6>resorts world sentosa</h6>
+                <p>A curated guide to the incredible attractions of resorts world sentosa , singapore</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660808085_shutterstock_1611239635_min.jpg" alt="">
+                <h6>saudi tourism authority</h6>
+                <p>this quiz on saudi will help you desgin your best adventure</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1663242404_1662994966_gostops_ooty_1.jpg" alt="">
+                <h6>gostops</h6>
+                <p>these gorgeos goStops hotels are perfect for those looking to celebrate a green diwali</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1666862339_1666247652_26_4o693h3.jpg" alt="">
+                <h6>amberstudent</h6>
+                <p>student in london? here's your guide to affordable and exciting ways to explore the city!</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1659354694_yaopey_yong_flmptucjkto_unsplash.jpg" alt="">
+                <h6>niyo global</h6>
+                <p>India's top travel influencers share their best secrets for budget international trips</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+   
 
     <!-- the 8 cards after the first  slideshow -->
     <div id="cards1">
@@ -90,6 +237,50 @@
     <div id="cards2">
 
     </div>
+
+
+    <!-- the plans which you can buy to have a holiday destination -->
+    <div id="destination-plans">
+     
+        <!-- <div class="place">
+            <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1645772836_image_cover.jpg" alt="">
+            <p>Stargaze &amp; Enjoy a Picnic in the Hills as You Stay at a Unique A-Framed Cottage | Urna Boutique Stay</p>
+            <p>₹ 8600/person</p>
+            <button class="btn">buy now</button>
+        </div>
+        
+
+        
+        <div class="place">
+          <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1660316705_image_cover_1.jpg" alt="">
+          <p>Hike to gallu waterfall and find the joy of doing nothing</p>
+          <p>₹ 7000/person</p>
+          <button class="btn">buy now</button>
+        </div>
+        
+
+     
+       <div class="place">
+        <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1653391344_ln_c1.jpg" alt="">
+        <p>Expolore an artist's estate and stay in a kathkuni home</p>
+        <p>₹ 9850/person</p>
+        <button class="btn">buy now</button>
+      </div>
+      
+
+      
+      <div class="place">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1660666126_image_covera.jpg" alt="">
+      <p>Learn Kalaripayattu & cycle around town as you stay on a rustic farm| beyond community</p>
+      <p>₹ 6000/person</p>
+      <button class="btn">buy now</button>
+      </div> -->
+      
+
+</div>
+
+
+</div>
 
 
     <!-- the 8 cards after the socond carousel( which includes the pricing as well) -->
@@ -190,4 +381,9 @@
    </div>
 </body>
 </html>
-<script src="script.js"></script>
+ <script src="script.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script src="slider1.js"></script>

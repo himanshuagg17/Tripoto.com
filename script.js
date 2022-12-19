@@ -146,3 +146,66 @@ function displayCards4(fetchedData){
 
     })
 }
+
+
+fetch("cards-buy.json").then(function(response){
+    return response.json();
+}).then(function(data){
+    console.log(data);
+    
+    displayCards5(data);
+}).catch(function(error){
+    console.log(error);
+})
+
+function displayCards5(fetchedData){
+   
+    let parent=document.querySelector("#destination-plans");
+    
+    fetchedData.forEach(function(el){
+
+   
+
+    let card=document.createElement("div");
+    
+    let img=document.createElement("img");
+    img.setAttribute("src",el.image);
+
+    let title=document.createElement("h3");
+    title.textContent=el.title;
+
+    let creator=document.createElement("p");
+    creator.textContent=el.creator;
+
+    let price=document.createElement("p");
+    price.textContent=el.price;
+
+    let btn=document.createElement("button");
+    btn.textContent="buy now";
+    btn.addEventListener("click",function(){
+        let cart=JSON.parse(localStorage.getItem("cartItems"))||[];
+        let temp=[];
+        temp.push(el);
+        cart.push(temp);
+        localStorage.setItem("cartItems",JSON.stringify(cart));
+        alert("complete the payment now");
+        window.location.assign("./payment.html");
+    })
+
+    card.append(img,title,creator,price,btn);
+    parent.append(card);
+
+    })
+}
+
+
+// buying feature
+let button=document.querySelectorAll(".btn");
+for(let i=0;i<button.length;i++){
+    button[i].addEventListener("click",function(){
+        let cart=JSON.parse(localStorage.getItem("cartItem"))||[];
+        let temp=[];
+        
+        window.location.assign("./cart.html");
+    })
+}
